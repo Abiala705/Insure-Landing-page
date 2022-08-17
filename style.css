@@ -1,0 +1,48 @@
+.hero {
+  background-image: url(images/bg-pattern-intro-left-mobile.svg) right bottom
+      no-repeat,
+    url(images/bg-pattern-intro-right-desktop.svg);
+  height: 80vh;
+  background-color: hsl(256, 26%, 20%);
+  background-repeat: no-repeat;
+  color: white;
+  width: 100%;
+}
+
+#intro h1,
+#how h1 {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 64px;
+}
+
+#how h3 {
+  font-family: "DM Serif Display", sans-serif;
+}
+
+#how p,
+#intro p {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+#intro img {
+  transform: translateY(20%);
+
+  transform: scale(0.8);
+}
+.intro-btn {
+  color: white;
+  padding: 8px 12px;
+  border: 1px solid white;
+  background-color: inherit;
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+  border-radius: none;
+}
+
+.marginn {
+  margin-top: 86px;
+}
+
+.marginnn {
+  margin-top: 128px;
+}
