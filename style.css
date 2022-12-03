@@ -32,6 +32,11 @@ header {
   font-weight: 700;
 }
 
+.nav-btn a {
+  text-decoration: none;
+  color: hsl(270, 9%, 17%);
+}
+.nav-btn a:hover,
 .nav-btn:hover,
 .nav-btn::after {
   color: white;
