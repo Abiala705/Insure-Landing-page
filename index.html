@@ -50,17 +50,95 @@
     </style>
   </head>
   <body class="container-xxl">
+    <header>
+      <div class="row">
+        <div class="col-12">
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid py-1">
+              <a class="navbar-brand" href="index.html"
+                ><img src="/images/logo.svg"
+              /></a>
+
+              <a
+            class="d-md-none"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            role="button"
+            aria-controls="offcanvasExample"
+          >
+           <img src="/images/icon-hamburger.svg"/>
+          </a>
+                <!-- <span class="navbar-toggler-icon"
+                  ></span> -->
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav gap-3 ms-auto pe-5">
+                  <a class="nav-link" aria-current="page" href="#"
+                    >How we work</a
+                  >
+                  <a class="nav-link" href="#">Blog</a>
+                  <a class="nav-link" href="#">Account</a>
+                  <button type="button" class="btn btn-primary btn-lg nav-btn">
+                    View plans
+                  </button>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <!-- Offcanvas -->
+          
+          
+
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                <a class="navbar-brand" href="index.html"
+                ><img src="/images/logo.svg"
+              /></a>
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset pe-3 pb-4"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ><img src="/images/icon-close.svg"/></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <ul class="row ">
+                  <li class="offcanvas-link mt-2 mb-5 "><a class="row justify-content-center align-content-center">How we work</a></li>
+                  <li class="offcanvas-link mb-5"><a class="row justify-content-center align-content-center">Blog</a></li>
+                  <li class="offcanvas-link mb-5"><a class="row justify-content-center align-content-center">Account</a></li>
+                  <button type="button" class="btn btn-primary btn-lg offcanvas-btn row justify-content-center align-content-center">
+                    View plans
+                  </button>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <section id="intro" class="container-xxl container-fluid hero text-center">
       <div class="mt-sm-3">
-        <div class="row">
-          <div class="col-sm-12 col-lg-6">
+        <div class="row hero-wrapper">
+          <div class="col-sm-12 col-lg-6 order-md-1 hero-img">
             <img
               src="/images/image-intro-mobile.jpg"
               alt="intro image"
-              class=""
+              id="hero-image"
             />
           </div>
-          <div class="col-sm-12 col-lg-6 py-5">
+          <div class="hero-text col-sm-12 col-lg-6 py-5 order-md-0">
             <h1 class="display-1">Humanizing your insurance.</h1>
             <p class="lead px-5 my-4">
               Get your life insurance coverage easier and faster. We blend our
@@ -82,11 +160,13 @@
       class="col-12 container-fluid container-xl marginn text-center p-5"
     >
       <div class="container-lg mt-5">
-        <hr />
-        <h1 class="display-1">We're different</h1>
+        <hr class="text-center col-md-2" />
+        <h1 class="display-1 about-header text-start pt-md-5">
+          We're different
+        </h1>
       </div>
-      <div class="row mt-5 gap-5">
-        <div class="col-sm-12 col-lg-4 mt-md-5">
+      <div class="row mt-5 gap-5 justify-content-center">
+        <div class="col-sm-12 col-md-3 mt-md-5 text-md-start">
           <img
             src="/images/icon-snappy-process.svg"
             alt="snappy process"
@@ -98,7 +178,7 @@
             Don’t get stuck filling in tedious forms.
           </p>
         </div>
-        <div class="col-sm-12 col-lg-4 mt-md-5">
+        <div class="col-sm-12 col-md-3 mt-md-5 text-md-start">
           <img
             src="/images/icon-affordable-prices.svg"
             alt="affordable prices"
@@ -110,7 +190,7 @@
             be low, but we still offer the best coverage possible.
           </p>
         </div>
-        <div class="col-sm-12 col-lg-4 mt-md-5">
+        <div class="col-sm-12 col-md-3 mt-md-5 text-md-start">
           <img
             src="/images/icon-people-first.svg"
             alt="people first"
@@ -129,12 +209,12 @@
     <section id="how" class="container-fluid container-xl how marginnn p-5">
       <div class="container-xl row col-md-12">
         <h2
-          class="display-2 how-header p-0 d-flex align-content-center justify-content-center"
+          class="col-md-6 display-2 how-header p-0 d-flex align-content-center justify-content-center text-md-start"
         >
           Find out more about how we work
         </h2>
         <div
-          class="col-lg-3 d-flex align-content-center justify-content-center pt-5"
+          class="col-md-6 d-flex align-content-center justify-content-center pt-5"
         >
           <button class="btn how-btn btn-lg">How we work</button>
         </div>
@@ -147,14 +227,14 @@
     <footer class="container-xxl">
       <div class="container-xl">
         <div class="row d-flex p-5">
-          <div class="row g-3">
+          <div class="row g-3 col-md-12">
             <div
-              class="col-12 d-flex justify-content-center align-content-center"
+              class="col-12 col-md-6 d-flex justify-content-center align-content-center"
             >
               <img src="/images/logo.svg" alt="logo" class="footer-img" />
             </div>
             <div
-              class="social-icons col-12 d-flex justify-content-center align-content-center"
+              class="social-icons col-12 col-md-6 d-flex justify-content-center align-content-center"
             >
               <span
                 ><svg
@@ -210,9 +290,9 @@
 
           <div class="margin-48"></div>
           <hr />
-          <div class="footer-link-list marginn">
+          <div class="footer-link-list marginn row px-3">
             <div
-              class="company d-flex col-12 row justify-content-center align-content-center"
+              class="company d-flex col-12 col-md-3 row justify-content-center align-content-center"
             >
               <h5 class="footer-heading ps-2">Our Company</h5>
               <ul class="footer-list p-2">
@@ -223,7 +303,7 @@
                 <li><a href="#">Reviews</a></li>
               </ul>
             </div>
-            <div class="company d-flex row">
+            <div class="company d-flex col-md-3 row">
               <h5 class="footer-heading ps-2">Help me</h5>
               <ul class="footer-list p-2">
                 <li><a href="#">faq</a></li>
@@ -232,7 +312,7 @@
                 <li><a href="#">Cookies</a></li>
               </ul>
             </div>
-            <div class="company d-flex row">
+            <div class="company d-flex col-md-3 row">
               <h5 class="footer-heading ps-2">Contact</h5>
               <ul class="footer-list p-2">
                 <li><a href="#">Sales</a></li>
@@ -243,7 +323,7 @@
                 </div>
               </ul>
             </div>
-            <div class="company d-flex row">
+            <div class="company d-flex col-md-3 row">
               <h5 class="footer-heading ps-2">Others</h5>
               <ul class="footer-list p-2">
                 <li><a href="#">Careers </a></li>

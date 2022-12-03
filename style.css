@@ -2,8 +2,41 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
-  width: 100vh;
+}
+/* Header */
+header {
+  height: 3rem;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: grey;
+  text-transform: uppercase;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  color: hsl(270, 9%, 17%);
+}
+
+.nav-btn {
+  color: hsl(270, 9%, 17%);
+  padding: 8px 20px;
+  border: 2px solid hsl(270, 9%, 17%);
+  background-color: transparent;
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+  border-radius: 0px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.nav-btn:hover,
+.nav-btn::after {
+  color: white;
+  background-color: hsl(270, 9%, 17%);
+  border: none;
 }
 
 .hero {
@@ -15,8 +48,11 @@ body {
   color: white;
   display: flex;
   justify-content: center;
+  min-height: 100vh;
 }
-
+p {
+  font-family: "Karla", sans-serif;
+}
 #intro h1,
 #about h1,
 #how h2 {
@@ -25,13 +61,44 @@ body {
   font-weight: 600;
 }
 
-#intro p {
+.lead {
   font-size: 1rem;
 }
 #intro img {
   width: 100%;
 }
 
+/* Offcanvas */
+.offcanvas-header {
+  background-color: white;
+  height: 4rem;
+}
+
+.offcanvas-body {
+  background-color: black;
+}
+.offcanvas-link {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  align-self: center;
+}
+
+.offcanvas-body ul li {
+  list-style-type: none;
+}
+.offcanvas-body ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 98%);
+}
+.offcanvas-btn {
+  color: hsl(0, 0%, 98%);
+  border: 2px solid white;
+  background-color: transparent;
+  text-transform: uppercase;
+  border-radius: 0px;
+}
 /* Buttons */
 .intro-btn,
 .about-btn,
@@ -43,6 +110,7 @@ body {
   font-family: "Karla", sans-serif;
   text-transform: uppercase;
   border-radius: none;
+  border-radius: 0px;
 }
 
 .intro-btn:hover,
@@ -83,7 +151,6 @@ footer {
   display: flex;
   justify-content: center;
   align-content: center;
-
 }
 
 footer span {
@@ -97,13 +164,12 @@ footer span {
   color: grey;
   display: flex;
   justify-content: center;
-  align-content: center
+  align-content: center;
 }
 
 .footer-link-list {
   text-transform: uppercase;
   font-family: "Karla", sans-serif;
-  
 }
 
 .footer-list {
@@ -120,7 +186,7 @@ footer span {
   font-weight: 700;
   display: flex;
   justify-content: center;
-  align-content: center
+  align-content: center;
 }
 
 .footer-list li a:hover {
@@ -139,8 +205,41 @@ footer span {
 svg .icon {
   fill: "black";
 }
- */
 
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .how-btn {
+    padding: 10px 20px;
+  }
+
+  #hero-image {
+    src: url("/images/image-intro-desktop.jpg");
+  }
+}
+
+@media (min-width: 992px) {
+  .marginn {
+    margin-top: 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-wrapper {
+    position: relative;
+  }
+  .hero-img {
+    position: absolute;
+    transform: translateY(-5%);
+    transform: translateX(100%);
+  }
+
+  .hero-text {
+    padding: 0 5rem;
+    padding-top: 86px;
+  }
+}
 /* 
 #intro {
 }
